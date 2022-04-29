@@ -49,7 +49,7 @@
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 1
 
-/* Add 1000Hz polling rate defualt=10*/
+/* Add 1000Hz polling rate default=10*/
 #define USB_POLLING_INTERVAL_MS 1
 
 /* Increase the number of keys returned per scan. Default = 4 */
