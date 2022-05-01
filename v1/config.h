@@ -47,7 +47,7 @@
 #endif
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 1
+#define DEBOUNCE 0
 
 /* Add 1000Hz polling rate default=10*/
 #define USB_POLLING_INTERVAL_MS 1
