@@ -20,15 +20,24 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 This repository holds a fake new keyboard with only custom changes. It requires needs to be cloned in the "keyboard" directory of QMK in order to be usable.
 
-The keyboards can be compiled with the following command.
+This config is suitable for a V2 board, like the DZ60 V2 Flex cut.
+
+To set this keyboard and its keymap as default, use the following:
 
     ```bash
-    qmk compile -kb dz60_gsegt/v2 -km work
+    qmk config compile.keyboard=dz60_gsegt
+    qmk config compile.keymap=default
     ```
 
-or
+To set the default number of threads to use for compiling, use teh following:
+Make sure you adaote the number to the number  of threads of your computer.
 
     ```bash
-    qmk compile -kb dz60_gsegt/v2 -km gaming
+    qmk config compile.parallel=12
     ```
-The V2 covers the new flex v2 board. If you have the old non flex version, use the v1 board.
+
+Alternatively, you can compile the keyboard and its keymap with the following:
+
+    ```bash
+    qmk compile -kb dz60_gsegt -km default -j 12
+    ```
